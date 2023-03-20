@@ -1,0 +1,2 @@
+module NegativePostsHelper
+end

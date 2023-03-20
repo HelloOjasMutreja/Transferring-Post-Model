@@ -1,0 +1,2 @@
+class PositivePost < ApplicationRecord
+end

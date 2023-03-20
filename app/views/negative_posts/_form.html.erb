@@ -1,0 +1,22 @@
+<%= form_with(model: negative_post) do |form| %>
+  <% if negative_post.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(negative_post.errors.count, "error") %> prohibited this negative_post from being saved:</h2>
+
+      <ul>
+        <% negative_post.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :title, style: "display: block" %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

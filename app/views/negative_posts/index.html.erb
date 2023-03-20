@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Negative posts</h1>
+
+<div id="negative_posts">
+  <% @negative_posts.each do |negative_post| %>
+    <%= render negative_post %>
+    <p>
+      <%= link_to "Show this negative post", negative_post %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New negative post", new_negative_post_path %>

@@ -1,0 +1,2 @@
+class NegativePost < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+module PositivePostsHelper
+end

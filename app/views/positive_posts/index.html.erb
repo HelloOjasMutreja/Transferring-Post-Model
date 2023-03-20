@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Positive posts</h1>
+
+<div id="positive_posts">
+  <% @positive_posts.each do |positive_post| %>
+    <%= render positive_post %>
+    <p>
+      <%= link_to "Show this positive post", positive_post %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New positive post", new_positive_post_path %>

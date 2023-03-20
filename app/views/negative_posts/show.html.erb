@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @negative_post %>
+
+<div>
+  <%= link_to "Edit this negative post", edit_negative_post_path(@negative_post) %> |
+  <%= link_to "Back to negative posts", negative_posts_path %>
+
+  <%= button_to "Destroy this negative post", @negative_post, method: :delete %>
+</div>

@@ -1,0 +1,12 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @positive_post %>
+
+<%= button_to 'Transfer to Negative', transfer_positive_post_path(@positive_post), method: :patch %>
+
+<div>
+  <%= link_to "Edit this positive post", edit_positive_post_path(@positive_post) %> |
+  <%= link_to "Back to positive posts", positive_posts_path %>
+
+  <%= button_to "Destroy this positive post", @positive_post, method: :delete %>
+</div>
